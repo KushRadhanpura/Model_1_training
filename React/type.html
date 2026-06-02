@@ -45,10 +45,10 @@
         const useState = React.useState;
 
         function SimpleApp() {
-            // State jisme name save hoga
+            
             const [text, setText] = useState('');
 
-            // Function: Jab typing hogi
+            
             function change(event) {
                 setText(event.target.value);
             }
@@ -60,11 +60,11 @@
                     value: text, 
                     onChange: change 
                 }),
-                element('h2', null, text) // Niche output show hoga live
+                element('h2', null, text) 
             );
         }
 
-        // Render setup
+        
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(element(SimpleApp));
     </script>
